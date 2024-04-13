@@ -2,9 +2,9 @@
   "name": "node-typescript-boilerplate",
   "version": "1.0.0",
   "description": "Node project boilerplate incorporating TypeScript",
-  "main": "index.js",
   "scripts": {
-    "test": "\"jest --forceExit --coverage --verbose\""
+    "dev": "npx nodemon ./src/exports.ts",
+    "test": "npx jest --forceExit --coverage --verbose"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/nephdog/node-typescript-boilerplate/issues"
   },
-  "homepage": "https://github.com/nephdog/node-typescript-boilerplate#readme"
+  "homepage": "https://github.com/nephdog/node-typescript-boilerplate#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
 }
