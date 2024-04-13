@@ -7,7 +7,7 @@
 /coverage
 
 # build
-/build
+/dist
 
 # misc
 .DS_Store
