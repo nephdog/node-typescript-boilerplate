@@ -29,5 +29,9 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": "eslint --cache --fix && prettier --write --ignore-unknown"
+  },
+  "hooks": {
+    "pre-commit": "lint-staged && npm run test",
+    "post-commit": "git update-index -g"
   }
 }
