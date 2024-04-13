@@ -1,0 +1,19 @@
+{
+  "name": "node-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "Node project boilerplate incorporating TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"jest --forceExit --coverage --verbose\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nephdog/node-typescript-boilerplate.git"
+  },
+  "author": "Nephi Grant",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nephdog/node-typescript-boilerplate/issues"
+  },
+  "homepage": "https://github.com/nephdog/node-typescript-boilerplate#readme"
+}
