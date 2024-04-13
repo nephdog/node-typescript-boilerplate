@@ -12,7 +12,7 @@
     "allowSyntheticDefaultImports": true,     // Allow default imports from modules with no default export
   },
   "include": [
-    "src/**/*" // Include all files in the src folder,
+    "./src/**/*" // Include all files in the src folder,
   ],
   "exclude": [
     "node_modules" // Exclude the node_modules directory
