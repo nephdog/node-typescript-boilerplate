@@ -28,7 +28,11 @@
     "typescript": "^5.4.5"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": "eslint --cache --fix && prettier --write --ignore-unknown"
+    ".{js,ts}": [
+      "eslint --cache --fix",
+      "prettier --write --ignore-unknown",
+      "git add"
+    ]
   },
   "hooks": {
     "pre-commit": "lint-staged && npm run test",
