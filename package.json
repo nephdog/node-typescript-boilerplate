@@ -7,6 +7,7 @@
     "build-ts": "npx tsc",
     "dev": "npx nodemon ./src/main.ts",
     "lint": "npx eslint --cache --cache-location .cache/.eslintcache --fix --ext .jsx,.js,.tsx,.ts ./src",
+    "prepare": "husky",
     "start": "node ./dist/main.js",
     "test": "npx jest --coverage --verbose",
     "test:watch": "npx jest --watch"
