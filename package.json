@@ -6,7 +6,8 @@
     "dev": "npx nodemon ./src/exports.ts",
     "lint": "npx eslint --cache --cache-location .cache/.eslintcache --fix ./src",
     "build-ts": "npx tsc",
-    "test": "npx jest --forceExit --coverage --verbose"
+    "test": "npx jest --coverage --verbose",
+    "test:watch": "npx jest --watch"
   },
   "repository": {
     "type": "git",
