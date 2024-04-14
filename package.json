@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "Node project boilerplate incorporating TypeScript",
   "scripts": {
-    "dev": "npx nodemon ./src/exports.ts",
-    "lint": "npx eslint --cache --cache-location .cache/.eslintcache --fix --ext .jsx,.js,.tsx,.ts ./src",
+    "build": "npm run lint && npm run build-ts",
     "build-ts": "npx tsc",
+    "dev": "npx nodemon ./src/main.ts",
+    "lint": "npx eslint --cache --cache-location .cache/.eslintcache --fix --ext .jsx,.js,.tsx,.ts ./src",
+    "start": "node ./dist/main.js",
     "test": "npx jest --coverage --verbose",
-    "test:watch": "npx jest --watch",
-    "prepare": "husky"
+    "test:watch": "npx jest --watch"
   },
   "repository": {
     "type": "git",
