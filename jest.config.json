@@ -4,7 +4,7 @@
   "coverageDirectory": "coverage",
   "moduleFileExtensions": ["js", "json", "jsx", "ts", "tsx", "node"],
   "testEnvironment": "node",
-  "testMatch": ["**/__test__/**/*.[jt]s?(x)", "**/test/?(*.)+(spec|test).[tj]s?(x)"],
+  "testMatch": ["**/__test__/**/*.[jt]s?(x)", "**/test/**/?(*.)+(spec|test).[tj]s?(x)"],
   "moduleDirectories": ["node_modules", "./src"],
   "moduleNameMapper": {
     "^@src/(.*)$": "<rootDir>/src/$1" // Map imports using the baseUrl
