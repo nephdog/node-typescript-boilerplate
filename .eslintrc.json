@@ -7,7 +7,7 @@
   ],
   "plugins": ["@typescript-eslint"],
   "parserOptions": {
-    "project": "./tsconfig.eslint.json"
+    "project": "./tsconfig.test.json"
   },
   "env": {
     "node": true, // Enable Node.js global variables

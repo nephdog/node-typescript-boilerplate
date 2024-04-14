@@ -2,29 +2,24 @@
   "clearMocks": true,
   "verbose": true,
   "coverageDirectory": "coverage",
-  "moduleFileExtensions": [
-    "js",
-    "json",
-    "jsx",
-    "ts",
-    "tsx",
-    "node"
-  ],
+  "moduleFileExtensions": ["js", "json", "jsx", "ts", "tsx", "node"],
   "testEnvironment": "node",
-  "testMatch": [
-    "**/test/__tests__/**/*.[jt]s?(x)",
-    "**/test/?(*.)+(spec|test).[tj]s?(x)"
-  ],
+  "testMatch": ["**/__test__/**/*.[jt]s?(x)", "**/test/?(*.)+(spec|test).[tj]s?(x)"],
+  "moduleDirectories": ["node_modules", "./src"],
+  "moduleNameMapper": {
+    "^@src/(.*)$": "<rootDir>/src/$1" // Map imports using the baseUrl
+  },
   "transform": {
     "^.+\\.(ts|tsx)$": "ts-jest"
   },
-  "transformIgnorePatterns": [
-    "/node_modules/"
-  ],
+  "transformIgnorePatterns": ["/node_modules/"],
   "reporters": ["default"],
   "globals": {
     "ts-jest": {
-      "tsconfig": "tsconfig.json"
+      "tsconfig": "./tsconfig.test.json"
     }
-  }
+  },
+  "globalSetup": "./test/_init/global-setup.ts",
+  "globalTeardown": "./test/_init/global-teardown.ts",
+  "setupFilesAfterEnv": ["./test/_init/setup-file.ts"]
 }

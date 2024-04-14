@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json", // Extend from your main tsconfig
+  "compilerOptions": {
+    "baseUrl": "./src" // Set base URL to src
+  },
+  "include": [
+    "**/src/**/*.ts", // Include all files in the src folder
+    "**/test/**/*.ts" // Include test files in the test src folder
+  ],
+  "exclude": ["node_modules"]
+}

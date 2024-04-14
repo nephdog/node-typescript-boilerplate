@@ -1,0 +1,4 @@
+// Currently vscode only has support for root tsconfig.json files. Adding this file here fixes vscodes intellisense for test files.
+{
+  "extends": "../tsconfig.test.json"
+}
