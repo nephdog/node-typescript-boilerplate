@@ -27,3 +27,15 @@ It includes the following with their appropriate configurations to ensure TypeSc
 ```
 npm run dev
 ```
+
+- Build for production
+
+```
+npm run build
+```
+
+- Start for production (Requires building for production first)
+
+```
+npm run start
+```
