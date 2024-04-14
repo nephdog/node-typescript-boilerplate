@@ -7,11 +7,10 @@
   ],
   "plugins": ["@typescript-eslint"],
   "parserOptions": {
-    "project": true,
-    "tsconfigRootDir": "__dirname"
+    "project": "./tsconfig.eslint.json"
   },
   "env": {
-    "node": true,  // Enable Node.js global variables
+    "node": true, // Enable Node.js global variables
     "es2022": true // Sets the ECMAScript features to those of ES2022
   },
   "rules": {
