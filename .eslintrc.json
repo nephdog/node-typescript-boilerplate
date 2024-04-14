@@ -1,0 +1,19 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-plugin/recommended"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "parserOptions": {
+    "project": true,
+    "tsconfigRootDir": "__dirname"
+  },
+  "env": {
+    "node": true,  // Enable Node.js global variables
+    "es2022": true // Sets the ECMAScript features to those of ES2022
+  },
+  "rules": {
+    // Custom rules can be added here
+  }
+}
