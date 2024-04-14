@@ -6,7 +6,7 @@ This is a boilerplate to be used in [TypeScript](https://www.typescriptlang.org/
 
 It includes the following with their appropriate configurations to ensure TypeScript compatibility:
 
-[EditorConfig](https://editorconfig.org/) consistent coding styles between different editors and IDEs in a project.
+[EditorConfig](https://editorconfig.org/) for consistent coding styles between different editors and IDEs in a project.
 
 [ESLint](https://eslint.org/) for static code analysis.
 
