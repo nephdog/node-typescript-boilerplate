@@ -4,7 +4,8 @@
   "description": "Node project boilerplate incorporating TypeScript",
   "scripts": {
     "dev": "npx nodemon ./src/exports.ts",
-    "lint": "npx eslint --fix ./src",
+    "lint": "npx eslint --cache --cache-location .cache/.eslintcache --fix ./src",
+    "build-ts": "npx tsc",
     "test": "npx jest --forceExit --coverage --verbose"
   },
   "repository": {
