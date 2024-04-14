@@ -22,19 +22,25 @@ It includes the following with their appropriate configurations to ensure TypeSc
 
 ## Scriptss
 
-- Run in development mode
+Run in development mode:
 
 ```
 npm run dev
 ```
 
-- Build for production
+Execute tests:
+
+```
+npm run test
+```
+
+Build for production:
 
 ```
 npm run build
 ```
 
-- Start for production (Requires building for production first)
+Start for production (Requires building for production first):
 
 ```
 npm run start
