@@ -10,15 +10,10 @@
     "^@src/(.*)$": "<rootDir>/src/$1" // Map imports using the baseUrl
   },
   "transform": {
-    "^.+\\.(ts|tsx)$": "ts-jest"
+    "^.+\\.(ts|tsx)$": ["ts-jest", "./tsconfig.test.json"]
   },
   "transformIgnorePatterns": ["/node_modules/"],
   "reporters": ["default"],
-  "globals": {
-    "ts-jest": {
-      "tsconfig": "./tsconfig.test.json"
-    }
-  },
   "globalSetup": "./test/_init/global-setup.ts",
   "globalTeardown": "./test/_init/global-teardown.ts",
   "setupFilesAfterEnv": ["./test/_init/setup-file.ts"]
