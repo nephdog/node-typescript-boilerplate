@@ -20,7 +20,7 @@ It includes the following with their appropriate configurations to ensure TypeSc
 
 [Nodemon](https://nodemon.io/) for automatic reload.
 
-## Scriptss
+## Scripts
 
 Run in development mode:
 
